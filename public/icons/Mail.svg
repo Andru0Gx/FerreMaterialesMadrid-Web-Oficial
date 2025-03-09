@@ -1,0 +1,17 @@
+<svg
+    class="size-6"
+    viewBox="0 0 17 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+        d="M14.5 1H2.5C1.67157 1 1 1.67157 1 2.5V11.5C1 12.3284 1.67157 13 2.5 13H14.5C15.3284 13 16 12.3284 16 11.5V2.5C16 1.67157 15.3284 1 14.5 1Z"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    <path
+        d="M16 3.25L9.2725 7.525C9.04095 7.67007 8.77324 7.74701 8.5 7.74701C8.22676 7.74701 7.95905 7.67007 7.7275 7.525L1 3.25"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+</svg>
