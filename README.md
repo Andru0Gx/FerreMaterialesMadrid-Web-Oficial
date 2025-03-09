@@ -1,12 +1,13 @@
 <div align="center">
-    <img src="./public/svg/Logo.svg" alt="Logo" width="300px" height="300px"/>
+    <img src="./public/svg/favicon.svg" alt="Logo" width="300px" height="300px"/>
 
 # Web Oficial de FerreMateriales Madrid
 
 FerreMateriales Madrid es una empresa de ferretería dedicada a la venta de materiales de construcción, herramientas y artículos de bricolaje. Encuentra productos, ofertas especiales y gestiona tu carrito de compras directamente desde nuestra plataforma.
+
 </div>
 
-## 🚀 Tech Stack 
+## 🚀 Tech Stack
 
 <div align="center">
   
@@ -25,11 +26,12 @@ FerreMateriales Madrid es una empresa de ferretería dedicada a la venta de mate
 </div>
 
 ## 🌟 Características Principales
-- Catálogo de productos con búsqueda
-- Carrito de compras interactivo
-- Sistema de autenticación de usuarios
-- Panel de administración para empleados
-- Sección de subida de CVs
+
+-   Catálogo de productos con búsqueda
+-   Carrito de compras interactivo
+-   Sistema de autenticación de usuarios
+-   Panel de administración para empleados
+-   Sección de subida de CVs
 
 <!-- Badges -->
 
