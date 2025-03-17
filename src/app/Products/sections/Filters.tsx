@@ -36,7 +36,7 @@ export function Filters() {
             params.delete(name);
         }
 
-        router.replace(`${pathname}?${params.toString()}`);
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     };
 
     const handleCheckboxChange = (name: string, checked: boolean) => {
