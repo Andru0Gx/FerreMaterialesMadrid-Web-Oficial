@@ -79,31 +79,33 @@ export default function Products() {
     return (
         <div className="flex flex-col items-start">
             <div className="flex flex-col sm:flex-row w-full">
-                <Suspense fallback={<div>Cargando filtros...</div>}>
+                <Suspense>
                     <Filters />
                 </Suspense>
 
-                <div className="w-full">
-                    {loading ? (
-                        <div className="flex justify-center items-center w-full h-[30rem]">
-                            <CardsLoader />
-                        </div>
-                    ) : (
-                        <div className="grid grid-cols-1 gap-5 xl:gap-10 xl:grid-cols-3 desktop:grid-cols-4 desktop:gap-5 2xl:grid-cols-6 p-5">
-                            {filteredProducts.map((product, index) => (
-                                <Cards
-                                    id={product.ID}
-                                    name={product.name}
-                                    brand={product.brand}
-                                    stock={product.stock}
-                                    price={product.price}
-                                    img={product.img}
-                                    key={`${product.ID}-${index}`}
-                                />
-                            ))}
-                        </div>
-                    )}
-                </div>
+                <Suspense>
+                    <div className="w-full">
+                        {loading ? (
+                            <div className="flex justify-center items-center w-full h-[30rem]">
+                                <CardsLoader />
+                            </div>
+                        ) : (
+                            <div className="grid grid-cols-1 gap-5 xl:gap-10 xl:grid-cols-3 desktop:grid-cols-4 desktop:gap-5 2xl:grid-cols-6 p-5">
+                                {filteredProducts.map((product, index) => (
+                                    <Cards
+                                        id={product.ID}
+                                        name={product.name}
+                                        brand={product.brand}
+                                        stock={product.stock}
+                                        price={product.price}
+                                        img={product.img}
+                                        key={`${product.ID}-${index}`}
+                                    />
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </Suspense>
             </div>
         </div>
     );
