@@ -41,7 +41,7 @@ export function Cards({ id, name, brand, stock, price, img }: CardProps) {
             <div className="flex flex-row xl:flex-col items-center w-full">
                 <div className="min-w-28 h-40 sm:h-52 md:w-56 lg:w-52 xl:size-56 content-center bg-section rounded-xl overflow-hidden">
                     {img === "" ? (
-                        <Link href={`/products/${id}`}>
+                        <Link href={`/Products/${id}`}>
                             <div className="flex flex-col items-center justify-center size-full text-center xl:space-y-5 space-y-2 p-1 ">
                                 <ImageOff
                                     color="var(--color-1)"
@@ -53,7 +53,7 @@ export function Cards({ id, name, brand, stock, price, img }: CardProps) {
                             </div>
                         </Link>
                     ) : (
-                        <Link href={`/products/${id}`}>
+                        <Link href={`/Products/${id}`}>
                             <div className="h-32 lg:h-36 xl:h-56 min-w-0 w-full">
                                 <CustomImage
                                     src={img}
@@ -69,7 +69,7 @@ export function Cards({ id, name, brand, stock, price, img }: CardProps) {
                 <div className="flex flex-col text-xs md:text-sm space-y-1 pt-5 px-3 xl:px-0 max-h-52 h-full justify-between w-full min-w-0">
                     <div className="flex flex-col space-y-1">
                         <Link
-                            href={`/products/${id}`}
+                            href={`/Products/${id}`}
                             className="text-sm md:text-lg lg:text-xl font-bold text-color-3 text-pretty line-clamp-2"
                             title={name}
                         >
@@ -79,7 +79,7 @@ export function Cards({ id, name, brand, stock, price, img }: CardProps) {
                         <span className="text-color-1">
                             {stock} Disponibles
                         </span>
-                        <Link href={`/products/${id}`} className="text-color-3">
+                        <Link href={`/Products/${id}`} className="text-color-3">
                             Precio: ${price}
                         </Link>
                     </div>
