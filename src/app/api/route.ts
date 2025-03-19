@@ -5,7 +5,7 @@ import { turso } from "@/lib/turso";
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
 
-    let query = "SELECT * FROM Products WHERE 1=1";
+    let query = "SELECT id, name, summary, description, specifications, img, price, stock, brand FROM Products WHERE 1=1";
     const params = [];
 
     // Construir query dinámica
