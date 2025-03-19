@@ -9,7 +9,7 @@ export default function ProductsContent() {
     const searchParams = useSearchParams();
     const [products, setProducts] = useState<
         {
-            ID: string;
+            id: string;
             name: string;
             brand: string;
             stock: number;
@@ -78,13 +78,13 @@ export default function ProductsContent() {
                 <div className="grid grid-cols-1 gap-5 xl:gap-10 xl:grid-cols-3 desktop:grid-cols-4 desktop:gap-5 2xl:grid-cols-6 p-5">
                     {filteredProducts.map((product, index) => (
                         <Cards
-                            id={product.ID}
+                            id={product.id}
                             name={product.name}
                             brand={product.brand}
                             stock={product.stock}
                             price={product.price}
                             img={product.img}
-                            key={`${product.ID}-${index}`}
+                            key={`${product.id}-${index}`}
                         />
                     ))}
                 </div>
