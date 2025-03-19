@@ -1,30 +1,18 @@
 import Image from "next/image";
 
 export function Footer() {
-
-    const Instagram = "./icons/Instagram.svg";
-    const Whatsapp = "./icons/Whatsapp.svg";
-    const Clock = "./icons/Clock.svg";
-    const Mail = "./icons/Mail.svg";
-
-
     return (
         <footer>
-            <div
-                className="bg-color-3 w-full flex space-y-reverse space-y-10 flex-col-reverse p-6 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between lg:items-start"
-            >
-                <ul
-                    className="flex flex-col justify-center space-y-4 h-full text-white text-sm w-full items-start"
-                >
+            <div className="bg-color-3 w-full flex space-y-reverse space-y-10 flex-col-reverse p-6 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between lg:items-start">
+                <ul className="flex flex-col justify-center space-y-4 h-full text-white text-sm w-full items-start">
                     <li>
                         <a
                             href="https://www.instagram.com/ferrematerialesmadrid/"
                             target="_blank"
                             className="flex items-center space-x-5"
                         >
-
                             <Image
-                                src={Instagram}
+                                src="/icons/Instagram.svg"
                                 alt="Instagram"
                                 width={24}
                                 height={24}
@@ -40,7 +28,7 @@ export function Footer() {
                             className="flex items-center space-x-5"
                         >
                             <Image
-                                src={Whatsapp}
+                                src="/icons/Whatsapp.svg"
                                 alt="Whatsapp"
                                 width={24}
                                 height={24}
@@ -52,7 +40,7 @@ export function Footer() {
                     <li>
                         <div className="flex items-center space-x-5">
                             <Image
-                                src={Clock}
+                                src="/icons/Clock.svg"
                                 alt="Clock"
                                 width={24}
                                 height={24}
@@ -64,7 +52,7 @@ export function Footer() {
                     <li>
                         <div className="flex items-center space-x-5">
                             <Image
-                                src={Mail}
+                                src="/icons/Mail.svg"
                                 alt="Mail"
                                 width={24}
                                 height={24}
@@ -74,8 +62,8 @@ export function Footer() {
                     </li>
 
                     <li>
-                        © {new Date().getFullYear()} Ferre Materiales Madrid. Todos los
-                        derechos reservados.
+                        © {new Date().getFullYear()} Ferre Materiales Madrid.
+                        Todos los derechos reservados.
                     </li>
                 </ul>
 
