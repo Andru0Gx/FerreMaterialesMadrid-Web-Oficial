@@ -42,7 +42,8 @@ async function getProduct(id: string): Promise<Product | null> {
         let allImages = product.extraImg;
 
         if (typeof allImages === "string" && allImages !== null) {
-            allImages = allImages.split(",");
+            // Dividir por comas y eliminar espacios en blanco
+            allImages = allImages.split(",").map((url) => url.trim());
         }
 
         return {
